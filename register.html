@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi-Toyz</title>
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="JS/register.js" async></script>
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="navigation">
+            <div class="logo">
+                <img src="Asset/LogoHi-Toys.png" alt="Hi-Toys1">
+            </div>
+    
+            <div class="nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="reserve">
+            <ul>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+
+        <div class="toggle">
+            <a href="#"><img src="asset/toggle.png" alt="toggle"></a>
+            
+            <div class="dropdown-content">
+                <a href="home.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="event.html">Event</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="register.html">Register</a>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="container">
+
+        <form action="" id="form" method="POST">
+            <h2>Register</h2>
+            <div class="input-div">
+                <label for="name" class="label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Example (xxxxxxxx)">
+            </div>
+            <div class="input-div">
+                <label for="email" class="label">Email</label>
+                <input type="text" name="email" id="email" placeholder="Example (xxxxxx@gmail.com)">
+            </div>
+            <div class="input-div">
+                <label for="telephone" class="label">Telephone</label>
+                <input type="tel" name="telephone" id="telephone" placeholder="Example (081234567890)">
+            </div>
+            <div class="input-div">
+                <label for="Date of Birth" class="label">Date of Birth</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="input-div">
+                <label for="address" class="label">Address</label>
+                <textarea id="address" placeholder="Example (Jalan. 'animelife')"></textarea>
+            </div>
+            
+            <div class="input-div">
+                <label for="bike" class="label">Product</label>
+                <select id="country" name="bike">
+                    <option value="Rimuru">Figma Rimuru - Tensura Slime</option>
+                    <option value="Emilia">Figma Emilia - Re:Zero</option>
+                    <option value="BLK">Figma Black Rock Shooter - BLK Beast</option>
+                    <option value="Miku">Figma Hatsune Miku 3.0</option>
+                    <option value="Ganyu">Figma Ganyu - Genshin Impact</option>
+                    <option value="Megumin">Figma Megumin - Konosuba</option>
+                    <option value="Mio">Figma Mio Akiyama - K-ON!</option>
+                    <option value="Alice">Figma Alice Synthesis Thirty - SAO</option>
+                    <option value="Takina">Nendoroid Takina - Lycoris Recoil</option>
+                    <option value="Siesta">Nendoroid Siesta - Tantei Wa Mou</option>
+                    <option value="Gawr-Gura">Nendoroid Gawr Gura - Hololive</option>
+                    <option value="Hatsune-Miku">Nendoroid Hatsune Miku</option>
+                    <option value="Anya">Nendoroid Anya Forger - SPY x FAMILY</option>
+                    <option value="Venti">Nendoroid Venti - Genshin Impact</option>
+                    <option value="Elaina">Nendoroid Elaina - Majo No Tabitabi</option>
+                    <option value="Keychain">Keychain - One Piece</option>
+                    <option value="Glass">Glass - Doraemon</option>
+                    <option value="Stickers">Stickers - Demon Slayer</option>
+                    <option value="Pin">Pin - Boku no Hero</option>
+                    <option value="MousePad">Mouse Pad - Megumin</option>
+                    <option value="Shirt">Shirt - Pain</option>
+                </select>
+            </div>
+
+            <div class="input-div">
+                <label for="quantity" class="label">Quantity</label>
+                <input type="number" name="quantity" id="quantity" min="1" value="1">
+            </div>  
+
+            <div class="input-div" class="label">
+                <label for="pay" class="label">Payment</label>
+                <div class="radio">
+                    <input type="radio" name="pay" id="debit">
+                    <label for="pay">Debit</label>
+                    <input type="radio" name="pay" id="credit">
+                    <label for="pay">Credit</label>
+                </div>
+            </div>
+
+            <div class="input-div" class="label">
+                <label for="aggrement" class="label">Aggrement</label>
+                <div class="radio">
+                    <input type="checkbox" name="agreement" id="aggrement">
+                    <label for="aggrement">I agree for the terms and conditions</label>
+                </div>
+            </div>
+            <button type="submit">Confirm</button>
+
+            <div id="error"></div>
+        </form>
+    </div>
+
+
+    <div class="footer">
+
+        <div class="footer1">
+            <div class="logo">
+                <img src="Asset/LogoHi-Toys.png" alt="Hi-Toys" id="Hi-Toys1"> 
+            </div>
+            <div class="contents">
+                <div class="content1">
+                    <p>Contact Center (082397633582)</p>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="product.html">Products</a>
+                </div>
+
+                <div class="content2">
+                    <div class="text">
+                        <h2>Follow Us</h2>
+                        <p>You can follow us to get the latest information</p>
+                    </div>
+
+                    <div class="logo">
+                        <div class="card">
+                            <a href="https://www.instagram.com/"><img src="Asset/ig-logo.png" alt="ig"></a>
+                            <a href="https://www.instagram.com/">Instagram</a>
+                        </div>
+                        <div class="card">
+                            <a href="https://www.facebook.com/"><img src="Asset/facebook-logo.png" alt="fb"></a>
+                            <a href="https://www.facebook.com/">Facebook</a>
+                        </div>
+                        <div class="card">
+                            <a href="https://twitter.com/"><img src="Asset/twitter.png" alt="twitter"></a>
+                            <a href="https://twitter.com/">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content3">
+                    <h3>Hi-Toyz by Welly Piyono</h3>
+                    <p>Jl. Kh. Syahdan, Palmerah, Jakarta Barat, Indonesia</p>
+                    <p>Jakarta 123450 Indonesia</p>
+                    <p>PhoneNumber - 082397633582</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer2">
+            <p>Copyright &copy; 2023 - Hi-Toyz All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script src="js/home.js"> </script>
+
+</body>
+
+</html>
